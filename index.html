@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cócteles del Mundo 🍹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2909/2909807.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-cocktail"></i> Cócteles del Mundo</h1>
+        <p>Sumérgete en un universo de sabores con nuestra selección de cócteles de todo el mundo, perfectos para
+            cualquier ocasión.</p>
+        <a href="#cocktails" class="btn btn-primary">Explora Ahora</a>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Últimos Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cocktails">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specials">Especiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="blogs" class="section blog-section">
+        <div class="container">
+            <h2>Últimos Blogs</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjVx6MDP6k9U3byOlsR4bFnnWsc6-O6EYpOA&s"
+                            class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">La Historia del Margarita</h5>
+                            <p class="card-text">Descubre los orígenes de este clásico cóctel mexicano y cómo prepararlo
+                                perfectamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://bodegassalas.com/wp-content/uploads/2022/06/cocteles-de-verano-Bodegas-Salas-zaragoza-cocteles-peque.jpg"
+                            class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cócteles de Verano</h5>
+                            <p class="card-text">Refresca tu paladar con estas recetas ideales para los días cálidos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81QqraGcldL._AC_UL600_SR600,600_.jpg"
+                            class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <h5 class="card-title">El Arte del Mixology</h5>
+                            <p class="card-text">Consejos para dominar las técnicas de mezcla y crear tus propios
+                                cócteles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="cocktails" class="section catalog-section">
+        <div class="container">
+            <h2>Catálogo de Cócteles</h2>
+            <div id="cocktail-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="loading">Cargando cócteles... <i class="fas fa-spinner fa-spin"></i></div>
+            </div>
+            <nav aria-label="Cocktail pagination">
+                <ul id="pagination" class="pagination"></ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="specials" class="section specials-section">
+        <div class="container">
+            <h2>Especiales</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
+                            class="card-img-top" alt="Mojito">
+                        <div class="card-body">
+                            <h5 class="card-title">Mojito</h5>
+                            <p class="card-text">Un refrescante clásico cubano con menta y lima.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg"
+                            class="card-img-top" alt="Negroni">
+                        <div class="card-body">
+                            <h5 class="card-title">Negroni</h5>
+                            <p class="card-text">Una mezcla audaz de ginebra, vermut y Campari.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+                            class="card-img-top" alt="Old Fashioned">
+                        <div class="card-body">
+                            <h5 class="card-title">Old Fashioned</h5>
+                            <p class="card-text">Un cóctel atemporal con whisky y un toque de angostura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0" style="background: var(--primary-bg);">
+                        <div class="card-body p-5 text-center">
+                            <h2 class="mb-4">
+                                <i class="fas fa-users me-2"></i>Nosotros
+                            </h2>
+                            <p class="lead mb-3">
+                                En <strong>Cócteles del Mundo</strong>, celebramos la coctelería como un arte que une
+                                culturas y momentos. Nuestra misión es ofrecerte una experiencia inmersiva para explorar
+                                bebidas alcohólicas de todo el mundo, desde recetas tradicionales hasta innovaciones
+                                modernas.
+                            </p>
+                            <p class="mb-4">
+                                Trabajamos con
+                                <a href="https://www.thecocktaildb.com/" target="_blank"
+                                    style="color: var(--primary); text-decoration: underline;">
+                                    The Cocktail DB <i class="fas fa-external-link-alt" style="font-size: 0.9em;"></i>
+                                </a>
+                                para traerte recetas auténticas y de calidad. Ya seas un entusiasta o un profesional,
+                                aquí encontrarás inspiración para tus próximas creaciones. ¡Brinda con nosotros!
+                            </p>
+                            <img src="https://cdn-icons-png.flaticon.com/512/2909/2909807.png" alt="Cócteles del Mundo"
+                                width="60" class="mb-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Cócteles del Mundo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const cocktailContainer = document.getElementById('cocktail-container');
+        const pagination = document.getElementById('pagination');
+        const categoryButtons = document.getElementById('category-buttons');
+        const categoryCocktails = document.getElementById('category-cocktails');
+        const itemsPerPage = 9;
+        let currentPage = 1;
+        let drinks = [];
+        let currentCategory = '';
+
+        function displayCocktails(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedDrinks = drinks.slice(start, end);
+
+            cocktailContainer.innerHTML = '';
+            paginatedDrinks.forEach((drink, index) => {
+                const card = document.createElement('div');
+                card.className = 'col';
+                card.style.setProperty('--i', index);
+                card.innerHTML = `
+                    <div class="card h-100">
+                        <img src="${drink.strDrinkThumb}" class="card-img-top" alt="${drink.strDrink}" onerror="this.src='https://via.placeholder.com/250x200?text=${encodeURIComponent(drink.strDrink)}'">
+                        <div class="card-body">
+                            <h5 class="card-title">${drink.strDrink}</h5>
+                            <p class="card-text">Bebida Alcohólica</p>
+                        </div>
+                    </div>
+                `;
+                cocktailContainer.appendChild(card);
+            });
+        }
+
+        function setupPagination() {
+            const pageCount = Math.ceil(drinks.length / itemsPerPage);
+            pagination.innerHTML = '';
+
+            const prevLi = document.createElement('li');
+            prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+            prevLi.innerHTML = `<a class="page-link" href="#cocktails">Anterior</a>`;
+            prevLi.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayCocktails(currentPage);
+                    updatePagination();
+                    window.scrollTo({ top: document.getElementById('cocktails').offsetTop - 100, behavior: 'smooth' });
+                }
+            });
+            pagination.appendChild(prevLi);
+
+            const maxPagesToShow = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+            let endPage = Math.min(pageCount, startPage + maxPagesToShow - 1);
+            if (endPage - startPage + 1 < maxPagesToShow) {
+                startPage = Math.max(1, endPage - maxPagesToShow + 1);
+            }
+
+            if (startPage > 1) {
+                const firstLi = document.createElement('li');
+                firstLi.className = 'page-item';
+                firstLi.innerHTML = `<a class="page-link" href="#cocktails">1</a>`;
+                firstLi.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = 1;
+                    displayCocktails(currentPage);
+                    updatePagination();
+                    window.scrollTo({ top: document.getElementById('cocktails').offsetTop - 100, behavior: 'smooth' });
+                });
+                pagination.appendChild(firstLi);
+
+                if (startPage > 2) {
+                    const ellipsisLi = document.createElement('li');
+                    ellipsisLi.className = 'page-item disabled';
+                    ellipsisLi.innerHTML = `<span class="page-link">...</span>`;
+                    pagination.appendChild(ellipsisLi);
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const li = document.createElement('li');
+                li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+                li.innerHTML = `<a class="page-link" href="#cocktails">${i}</a>`;
+                li.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = i;
+                    displayCocktails(currentPage);
+                    updatePagination();
+                    window.scrollTo({ top: document.getElementById('cocktails').offsetTop - 100, behavior: 'smooth' });
+                });
+                pagination.appendChild(li);
+            }
+
+            if (endPage < pageCount) {
+                if (endPage < pageCount - 1) {
+                    const ellipsisLi = document.createElement('li');
+                    ellipsisLi.className = 'page-item disabled';
+                    ellipsisLi.innerHTML = `<span class="page-link">...</span>`;
+                    pagination.appendChild(ellipsisLi);
+                }
+
+                const lastLi = document.createElement('li');
+                lastLi.className = 'page-item';
+                lastLi.innerHTML = `<a class="page-link" href="#cocktails">${pageCount}</a>`;
+                lastLi.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentPage = pageCount;
+                    displayCocktails(currentPage);
+                    updatePagination();
+                    window.scrollTo({ top: document.getElementById('cocktails').offsetTop - 100, behavior: 'smooth' });
+                });
+                pagination.appendChild(lastLi);
+            }
+
+            const nextLi = document.createElement('li');
+            nextLi.className = `page-item ${currentPage === pageCount ? 'disabled' : ''}`;
+            nextLi.innerHTML = `<a class="page-link" href="#cocktails">Siguiente</a>`;
+            nextLi.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPage < pageCount) {
+                    currentPage++;
+                    displayCocktails(currentPage);
+                    updatePagination();
+                    window.scrollTo({ top: document.getElementById('cocktails').offsetTop - 100, behavior: 'smooth' });
+                }
+            });
+            pagination.appendChild(nextLi);
+        }
+
+        function updatePagination() {
+            setupPagination();
+        }
+
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list')
+            .then(response => response.json())
+            .then(data => {
+                categoryButtons.innerHTML = '';
+                data.drinks.forEach(category => {
+                    const btn = document.createElement('button');
+                    btn.className = 'btn btn-primary';
+                    btn.textContent = category.strCategory;
+                    btn.addEventListener('click', () => {
+                        currentCategory = category.strCategory;
+                        fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(category.strCategory)}`)
+                            .then(res => res.json())
+                            .then(catData => {
+                                categoryCocktails.innerHTML = '';
+                                catData.drinks.slice(0, 9).forEach((drink, index) => {
+                                    const card = document.createElement('div');
+                                    card.className = 'col';
+                                    card.style.setProperty('--i', index);
+                                    card.innerHTML = `
+                                        <div class="card h-100">
+                                            <img src="${drink.strDrinkThumb}" class="card-img-top" alt="${drink.strDrink}" onerror="this.src='https://via.placeholder.com/250x200?text=${encodeURIComponent(drink.strDrink)}'">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${drink.strDrink}</h5>
+                                                <p class="card-text">${category.strCategory}</p>
+                                            </div>
+                                        </div>
+                                    `;
+                                    categoryCocktails.appendChild(card);
+                                });
+                            })
+                            .catch(error => {
+                                console.error('Error al cargar los cócteles de la categoría:', error);
+                                categoryCocktails.innerHTML = `<p class="text-center text-danger">Error al cargar los cócteles. Por favor, intenta de nuevo.</p>`;
+                            });
+                    });
+                    categoryButtons.appendChild(btn);
+                });
+            })
+            .catch(error => {
+                console.error('Error al cargar las categorías:', error);
+                categoryButtons.innerHTML = `<p class="text-center text-danger">Error al cargar las categorías. Por favor, intenta de nuevo.</p>`;
+            });
+
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic')
+            .then(response => response.json())
+            .then(data => {
+                drinks = data.drinks;
+                displayCocktails(currentPage);
+                setupPagination();
+            })
+            .catch(error => {
+                console.error('Error al cargar los cócteles:', error);
+                cocktailContainer.innerHTML = `<p class="text-center text-danger">Error al cargar los datos. Por favor, intenta de nuevo más tarde.</p>`;
+            });
+    </script>
+</body>
+
+</html>
